@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	log.Print("helloworld: received request")
 	target := os.Getenv("TARGET")
 	if target == "" {
-		target = "World new version from my laptop"
+		target = "from golang apps demo"
 	}
 	fmt.Fprintf(w, "Hello %s!\n", target)
 }
